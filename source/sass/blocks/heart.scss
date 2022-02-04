@@ -30,11 +30,11 @@
 
 @keyframes heart {
   0% {
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(0.8);
   }
 
   100% {
-    transform: translate(-50%, -50%) scale(1.2);
+    transform: translate(-50%, -50%) scale(1.1);
   }
 }
 
@@ -50,11 +50,11 @@
   z-index: 7;
 
   animation-name: heart;
-  animation-duration: 1000ms;
+  animation-duration: 1200ms;
   animation-timing-function: linear;
   animation-delay: 0ms;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: alternate-reverse;
   animation-fill-mode: both;
 }
 
@@ -81,7 +81,7 @@
   z-index: 4;
 
   animation-name: first-ellipse;
-  animation-duration: 4000ms;
+  animation-duration: 1200ms;
   animation-timing-function: linear;
   animation-delay: 0ms;
   animation-iteration-count: infinite;
@@ -109,7 +109,7 @@
   z-index: 4;
 
   animation-name: second-ellipse;
-  animation-duration: 4000ms;
+  animation-duration: 1200ms;
   animation-timing-function: linear;
   animation-delay: 0ms;
   animation-iteration-count: infinite;
@@ -119,11 +119,11 @@
 
 @keyframes third-ellipse {
   0% {
-    transform: translate(0%, -50%);
+    transform: translate(0%, -58%);
   }
 
   100% {
-    transform: translate(30%, -50%);
+    transform: translate(22%, -58%);
   }
 }
 
@@ -137,7 +137,7 @@
   z-index: 5;
 
   animation-name: third-ellipse;
-  animation-duration: 4000ms;
+  animation-duration: 1200ms;
   animation-timing-function: linear;
   animation-delay: 0ms;
   animation-iteration-count: infinite;
@@ -165,7 +165,7 @@
   z-index: 5;
 
   animation-name: fourth-ellipse;
-  animation-duration: 4000ms;
+  animation-duration: 1200ms;
   animation-timing-function: linear;
   animation-delay: 0ms;
   animation-iteration-count: infinite;
@@ -193,7 +193,7 @@
   z-index: 4;
 
   animation-name: fifth-ellipse;
-  animation-duration: 4000ms;
+  animation-duration: 1200ms;
   animation-timing-function: linear;
   animation-delay: 0ms;
   animation-iteration-count: infinite;
