@@ -1,50 +1,46 @@
 .cake {
-  width: 100%;
-  height: 100vh;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @keyframes cake-background {
-  0% {
-    background: none;
-  }
-  100% {
-    background: url('../img/cake-background.png');
-    background-size: 0%;
-  }
+	0% {
+		background: none;
+	}
+	100% {
+		background: url('../img/cake-background.png');
+		background-size: 0%;
+	}
 }
 
 @keyframes cake-background-move {
-  0% {
-    background: url('../img/cake-background.png') no-repeat center center / 30%;
-  }
-  100% {
-    background: url('../img/cake-background.png') no-repeat center center / 100%;
-  }
+	0% {
+		background: url('../img/cake-background.png') no-repeat center center / 30%;
+	}
+	100% {
+		background: url('../img/cake-background.png') no-repeat center center / 100%;
+	}
 }
 
 .cake__container {
-  width: 463px;
-  height: 508px;
-
-  position: relative;
-
-  animation-name: cake-background, cake-background-move;
-  animation-duration: 0.7s, 2s;
-  animation-timing-function: linear;
-  animation-delay: 0.3s, 1s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
+	width: 463px;
+	height: 508px;
+	position: relative;
+	animation-name: cake-background, cake-background-move;
+	animation-duration: 0.7s, 2s;
+	animation-timing-function: linear;
+	animation-delay: 0.3s, 1s;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
 }
 
 .cake__image-cake {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }

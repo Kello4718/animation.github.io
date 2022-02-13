@@ -1,108 +1,118 @@
-    .chameleon {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    @keyframes chameleon-background {
-        0% {
-            background: none;
-        }
-        66% {
-            background: none;
-        }
-        100% {
-            background: url('../img/chameleon-background.png');
-        }
-    }
-    
-    .chameleon__container {
-        width: 362px;
-        height: 379px;
-        position: relative;
-        animation-name: chameleon-background;
-        animation-duration: 9s;
-        animation-timing-function: cubic-bezier(.25, 1.45, .59, .31);
-        animation-delay: 0s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-fill-mode: both;
-    }
-    
-    @keyframes chameleon {
-        40% {
-            opacity: 1;
-        }
-        70% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 0;
-        }
-    }
-    
-    .chameleon__image-chameleon {
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        z-index: 1;
-        animation-name: chameleon;
-        animation-duration: 9s;
-        animation-timing-function: ease-out;
-        animation-delay: 1s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-fill-mode: forwards;
-    }
-    
-    .chameleon__image-branch {
-        position: absolute;
-        top: 39%;
-        left: 36%;
-    }
-    
-    @keyframes eye {
-        0% {
-            transform: translate(3px, 0px);
-        }
-        5% {
-            transform: translate(-13px, 0px);
-        }
-        10% {
-            transform: translate(-13px, 10px);
-        }
-        15% {
-            transform: translate(-7px, 6px);
-        }
-        20% {
-            transform: translate(-7px, 6px) scale(1.3);
-            opacity: 1;
-        }
-        30% {
-            transform: translate(-7px, 6px) scale(0.6);
-            opacity: 0;
-        }
-        33% {
-            transform: translate(-7px, 6px) scale(0.6);
-            opacity: 0;
-        }
-        50% {
-            opacity: 0;
-        }
-    }
-    
-    .chameleon__image-chameleon-eye {
-        position: absolute;
-        top: 49%;
-        left: 45%;
-        z-index: 2;
-        animation-name: eye;
-        animation-duration: 18s;
-        animation-timing-function: ease-out;
-        animation-delay: 1s;
-        animation-iteration-count: infinite;
-        animation-direction: normal;
-        animation-fill-mode: backwards;
-    }
+.chameleon {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes chameleon-background {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	80% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.chameleon__container {
+	width: 362px;
+	height: 379px;
+	position: relative;
+}
+
+.chameleon__image-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation-name: chameleon-background;
+	animation-duration: 10s;
+	animation-timing-function: ease-out;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes chameleon {
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	80% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.chameleon__image-chameleon {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	z-index: 1;
+	animation-name: chameleon;
+	animation-duration: 10s;
+	animation-timing-function: ease-out;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+
+.chameleon__image-branch {
+	position: absolute;
+	top: 39%;
+	left: 36%;
+}
+
+@keyframes eye {
+	0% {
+	transform: translate(3px, 0px);
+	}
+	10% {
+		transform: translate(-13px, 0px);
+	}
+	20% {
+		transform: translate(-13px, 10px);
+	}
+	30% {
+		transform: translate(-7px, 6px);
+	}
+	40% {
+		transform: translate(-7px, 6px) scale(1.3);
+		opacity: 1;
+	}
+	50% {
+		transform: translate(-7px, 6px) scale(0.6);
+		opacity: 0;
+	}
+	80% {
+		transform: translate(-7px, 6px) scale(0.6);
+		opacity: 0;
+	}
+	90% {
+	transform: translate(-7px, 6px) scale(1);
+	opacity: 1;
+	}
+	100% {
+		transform: translate(0px, 0px);
+	}
+}
+
+.chameleon__image-chameleon-eye {
+	position: absolute;
+	top: 49%;
+	left: 45%;
+	z-index: 2;
+	animation-name: eye;
+	animation-duration: 10s;
+	animation-timing-function: ease-out;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
